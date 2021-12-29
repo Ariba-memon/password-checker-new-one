@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password </title>
+</head>
+<body>
+    <h1>Enter Password</h1>
+    <input type="text" id="input" />
+    <button onclick="greet()">DONE</button>
+    <h2 id ="result" ></h2>
+    <h3>Hint is ariba</h3>
+
+    <script>
+       
+       function greet(){
+            
+            var name = document.getElementById("input").value;
+            if (name === "ariba"){
+                var result = ("right password")
+            }
+            else{
+                var result = ("wrong password")
+            }
+            document.getElementById("result").innerText = result;
+       }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 02</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body> 
+ 
+      <h2>What's the pa$$word?</h2>
+      <h3 id="result"></h3>
+      
+          <input type="text" placeholder="Enter Password" id="input" />
+       
+          <small>Password hint : Old is ___ </small>
+       
+
+        
+          <button id="button" onclick="greet()">Enter Password</button>
+          <!-- <button class="btn success">Success</button> -->
+        
+      </form>
+    </div>
+
+    <script>
+      function greet() {
+        var input = document.getElementById("input").value;
+
+        if (input === "gold") {
+          var result = ("SUCCESS!! 🙌");
+        }else{
+          var result = ("Something is wrong 😓 Check your Password! 😢");
+        }
+        document.getElementById("result").innerText = result;
+        document.getElementById("button").style.background='#800080';
+      }
+    </script>
+  </body>
+</html>
+
